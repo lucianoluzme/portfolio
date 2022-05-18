@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500&display=swap');
 
 :root{
-
+    --border-red: 1px solid red;
+    --border-green: 1px solid green;
     /*Font Color*/
 
     --hue:207;
@@ -83,3 +84,98 @@ img{
     display: grid;
     gap: 1.5rem;
 }
+
+    /*Profile*/
+
+.profile{
+    position: relative;
+    padding-top: 3.5rem;
+}
+
+.profile-container{
+    row-gap: 2rem;
+
+}
+
+.profile-data{
+    display: grid;
+    text-align: center;
+}
+
+.profile-perfil{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(180deg,
+        hsla(var(--hue),var(--sat), var(--lig),1) 0%,
+        hsla(var(--hue),var(--sat), var(--lig),.2)100%);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.profile-perfil img{
+    width: 100px;
+}
+
+.profile-border{
+    border: 2.5px solid var(--first-color);
+    justify-self: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: .75rem;
+
+}
+
+.profile-name{
+    font-size: var(--h2-font-size);
+}
+
+.profile-profession{
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.profile-social{
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+
+.profile-social-link{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: .5s;
+}
+
+.profile-social-link:hover{
+    color: var(--first-color);
+}
+
+.profile-info{
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;column-gap: 2.5rem;
+}
+
+.profile-info-group{
+    text-align: center;
+    margin-bottom: .25rem;
+}
+
+.profile-info-number{
+    font-size: var(--normal-font-size);
+    margin-bottom: .25rem;
+}
+
+.profile-info-description{
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+}
+
+    /*Buttons*/
