@@ -3,6 +3,7 @@
 :root{
     --border-red: 1px solid red;
     --border-green: 1px solid green;
+    --border-blue: 1px solid blue;
     /*Font Color*/
 
     --hue:207;
@@ -235,6 +236,7 @@ img{
     display: flex;
     justify-content: space-between;
     column-gap: .5rem;
+    border-radius: .75rem;
 }
 
 .filters-button{
@@ -309,3 +311,62 @@ img{
     bottom: 0;
 }
 
+    /*Skills*/
+.skills-content{
+    border: var(--border-green);
+    row-gap: 3.5rem;
+}
+
+.skills-title{
+    font-size: var(--h3-font-ize);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-box{
+    border: var(--border-red);
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.skills-group{
+    border: var(--border-blue);
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skills-data{
+    border: var(--border-green);
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skills-data i{
+    font-size: 1rem;
+    color: var(--first-color);
+}
+
+.skills-name{
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.skills-level{
+    font-size: var(--smaller-font-size);
+}
+
+    /*Filter*/
+.filters [data-content]{
+    display: none;
+}
+
+.filters-active[data-content]{
+    display: grid;
+}
+
+.filter-tab-active{
+    background-color: var(--body-color);
+}
