@@ -100,7 +100,6 @@ img{
     
     /*Theme*/
 .change-theme{
-    border: var(--border-blue);
     position: absolute;
     top: 1.5rem;
     right: 0;
@@ -365,7 +364,6 @@ body.dark-theme{
 
     /*Skills*/
 .skills-content{
-    border: var(--border-green);
     row-gap: 3.5rem;
 }
 
@@ -376,21 +374,18 @@ body.dark-theme{
 }
 
 .skills-box{
-    border: var(--border-red);
     display: flex;
     justify-content: center;
     column-gap: 3rem;
 }
 
 .skills-group{
-    border: var(--border-blue);
     display: grid;
     align-content: flex-start;
     row-gap: 1rem;
 }
 
 .skills-data{
-    border: var(--border-green);
     display: flex;
     column-gap: .5rem;
 }
@@ -454,12 +449,10 @@ body.dark-theme{
     .container{
         margin-left: 1rem;
         margin-right: 1rem;
-        border: var(--border-red);
     }
 
     .profile-info{
          column-gap: 1.5rem;
-        border: var(--border-green);
     }
 
     .profile-buttons{
@@ -472,7 +465,6 @@ body.dark-theme{
     /*Medium*/
 @media screen and (min-width: 576px){
     .projects-content{
-        border:var(--border-red);
         grid-template-columns: 332px;
         justify-content: center;
     }
@@ -485,7 +477,6 @@ body.dark-theme{
 
 @media screen and (min-width: 776px){
     .projects-content, .skills-content{
-        border: var(--border-blue);
         grid-template-columns: repeat(2, 332px);
     }
 
@@ -499,7 +490,6 @@ body.dark-theme{
 
 @media  screen and (min-width: 992px){
     .container{
-        border:var(--border-green);
         margin-left: auto;
         margin-right: auto;
     }
@@ -511,7 +501,6 @@ body.dark-theme{
 
     .profile{
         padding-top: 4rem;
-        border: var(--border-red);
     }
 
     .profile-border{
